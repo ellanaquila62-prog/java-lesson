@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Lesson — Complete Free Programming 1 Guide</title>
+    <meta name="description" content="Free complete Java lessons for Programming 1 — all modules, code files, and examples. No payment required!">
+    <meta name="keywords" content="free Java lessons, learn Java Philippines, Programming 1 Java, Java for beginners">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="logo">☕ Java Lesson</a>
+            <div class="owner-name">Bryan Joshua Aguilar</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">PROGRAMMING 1 COMPLETE</span>
+                <h1>Full Java Course — <br><span class="text-gradient">100% Free</span></h1>
+                <p class="hero-desc">All lessons, code files, and projects from basics to final calculator project. Directly copy and use — no payment needed!</p>
+                <a href="#lessons" class="btn primary-btn">Start Learning Now 👇</a>
+            </div>
+            <div class="hero-code">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">HelloJava.java</span>
+                    </div>
+<pre>public class HelloJava {
+  public static void main(String[] args) {
+    System.out.println("Free Java Lesson!");
+    System.out.println("Copy & Learn Today!");
+  }
+}</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="lessons-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📚 All Lessons — Ready to View!</h2>
+                <p>Select any lesson — read the explanation, copy the code, and run it immediately</p>
+            </div>
+
+            <!-- Lesson 1 -->
+            <div class="lesson-box">
+                <div class="lesson-header" onclick="toggleLesson('lesson1')">
+                    <span class="lesson-num">01</span>
+                    <h3>Java Basics — Getting Started</h3>
+                    <span class="toggle-icon" id="icon-lesson1">▼</span>
+                </div>
+                <div class="lesson-content" id="lesson1">
+                    <div class="lesson-body">
+                        <h4>📖 Definition:</h4>
+                        <p><strong>Java</strong> is a popular programming language that runs on many devices. Every Java program needs to be written in a file, compiled (translated into computer language), then run.</p>
+                        
+                        <h4>💡 Key Concepts:</h4>
+                        <ul>
+                            <li><strong>Class Name:</strong> Must be exactly the same as your filename — capitalization matters!</li>
+                            <li><strong>main() method:</strong> This is where your program always starts running.</li>
+                            <li><strong>System.out.println():</strong> Command to display text or output on the screen.</li>
+                            <li><strong>Compiling:</strong> Converts your human-readable code to computer-readable code.</li>
+                        </ul>
+                        
+                        <h4>🔧 Commands to Use:</h4>
+                        <ul>
+                            <li>Save file: Use the <strong>exact same name</strong> as your class name</li>
+                            <li>Compile: <code>javac FileName.java</code> — checks for errors</li>
+                            <li>Run: <code>java FileName</code> — executes your program</li>
+                        </ul>
+                        
+                        <h4>💻 Code — HelloJava.java</h4>
+                        <div class="code-display">
+<pre>// Lesson 1: Java Basics
+public class HelloJava {
+    // main() = where the program starts
+    public static void main(String[] args) {
+        // Print text to the screen
+        System.out.println("Hello from Java!");
+        System.out.println("This is my first program!");
+    }
+}
+
+/* How to use:
+1. Save as: HelloJava.java
+2. Compile: javac HelloJava.java
+3. Run: java HelloJava
+*/</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 2 -->
+            <div class="lesson-box">
+                <div class="lesson-header" onclick="toggleLesson('lesson2')">
+                    <span class="lesson-num">02</span>
+                    <h3>Variables & Data Types</h3>
+                    <span class="toggle-icon" id="icon-lesson2">▼</span>
+                </div>
+                <div class="lesson-content" id="lesson2">
+                    <div class="lesson-body">
+                        <h4>📖 Definition:</h4>
+                        <p><strong>Variables</strong> are like containers that store information or data for your program. <strong>Data Types</strong> tell Java what kind of data you are storing — a number, text, or true/false value.</p>
+                        
+                        <h4>💡 Common Data Types:</h4>
+                        <ul>
+                            <li><strong>int</strong> — stores whole numbers only (no decimals). Example: 5, -10, 1000</li>
+                            <li><strong>double</strong> — stores numbers with decimals. Example: 3.14, 99.99</li>
+                            <li><strong>char</strong> — stores a single character or letter. Use single quotes: 'A', '3'</li>
+                            <li><strong>boolean</strong> — stores only two possible values: <code>true</code> or <code>false</code></li>
+                            <li><strong>String</strong> — stores text or multiple characters. Use double quotes: "Hello World"</li>
+                        </ul>
+                        
+                        <h4>💻 Code — VariablesDemo.java</h4>
+                        <div class="code-display">
+<pre>// Lesson 2: Variables & Data Types
+public class VariablesDemo {
+    public static void main(String[] args) {
+        // int = whole number
+        int age = 19;
+        System.out.println("Age: " + age);
+
+        // double = decimal number
+        double price = 10.50;
+        System.out.println("Price: ₱" + price);
+
+        // char = single character
+        char grade = 'A';
+        System.out.println("Grade: " + grade);
+
+        // boolean = true or false
+        boolean isStudent = true;
+        System.out.println("Is student? " + isStudent);
+
+        // String = text
+        String name = "Bryan";
+        System.out.println("Name: " + name);
+    }
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 3 -->
+            <div class="lesson-box">
+                <div class="lesson-header" onclick="toggleLesson('lesson3')">
+                    <span class="lesson-num">03</span>
+                    <h3>User Input with Scanner</h3>
+                    <span class="toggle-icon" id="icon-lesson3">▼</span>
+                </div>
+                <div class="lesson-content" id="lesson3">
+                    <div class="lesson-body">
+                        <h4>📖 Definition:</h4>
+                        <p><strong>Scanner</strong> is a built-in tool in Java that lets your program read input from the user — whatever the user types on their keyboard becomes data your program can use.</p>
+                        
+                        <h4>💡 How It Works:</h4>
+                        <ul>
+                            <li><strong>Import first:</strong> Always write <code>import java.util.Scanner;</code> at the very top of your file</li>
+                            <li><strong>Create Scanner:</strong> Make a Scanner object to read input</li>
+                            <li><strong>Read input:</strong> Use methods like <code>nextLine()</code> for text, <code>nextInt()</code> for numbers</li>
+                            <li><strong>Close Scanner:</strong> Good practice to close it when done</li>
+                        </ul>
+                        
+                        <h4>💻 Code — ScannerInput.java</h4>
+                        <div class="code-display">
+<pre>// Lesson 3: Scanner Input
+import java.util.Scanner;  // Import the Scanner tool
+
+public class ScannerInput {
+    public static void main(String[] args) {
+        // Step 1: Create a Scanner object
+        Scanner input = new Scanner(System.in);
+
+        // Step 2: Ask and read text input
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();  // Reads a full line of text
+
+        // Step 3: Ask and read number input
+        System.out.print("Enter your age: ");
+        int age = input.nextInt();  // Reads a whole number
+
+        // Step 4: Use the input values
+        System.out.println("---------------------------");
+        System.out.println("Hello, " + name + "!");
+        System.out.println("You are " + age + " years old.");
+
+        // Step 5: Close the scanner
+        input.close();
+    }
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 4 -->
+            <div class="lesson-box">
+                <div class="lesson-header" onclick="toggleLesson('lesson4')">
+                    <span class="lesson-num">04</span>
+                    <h3>If-Else — Making Decisions</h3>
+                    <span class="toggle-icon" id="icon-lesson4">▼</span>
+                </div>
+                <div class="lesson-content" id="lesson4">
+                    <div class="lesson-body">
+                        <h4>📖 Definition:</h4>
+                        <p><strong>If-Else statements</strong> let your program make decisions. Based on whether a condition is true or false, the program runs different blocks of code — just like making choices in real life!</p>
+                        
+                        <h4>💡 Comparison Operators:</h4>
+                        <ul>
+                            <li><code>==</code> — Equal to (not a single = sign!)</li>
+                            <li><code>!=</code> — Not equal to</li>
+                            <li><code>></code> — Greater than</li>
+                            <li><code><</code> — Less than</li>
+                            <li><code>>=</code> — Greater than or equal to</li>
+                            <li><code><=</code> — Less than or equal to</li>
+                        </ul>
+                        
+                        <h4>💡 Structure:</h4>
+                        <ul>
+                            <li><strong>if:</strong> Check this condition first — run if TRUE</li>
+                            <li><strong>else if:</strong> If the first was FALSE, check this one instead</li>
+                            <li><strong>else:</strong> Run this only when ALL previous conditions were FALSE</li>
+                        </ul>
+                        
+                        <h4>💻 Code — GradingSystem.java</h4>
+                        <div class="code-display">
+<pre>// Lesson 4: If-Else / Grading System
+import java.util.Scanner;
+
+public class GradingSystem {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter your score (0-100): ");
+        int score = input.nextInt();
+        
+        // Check conditions one by one
+        if (score >= 90) {
+            System.out.println("Grade: A — Excellent! ✅");
+        } else if (score >= 80) {
+            System.out.println("Grade: B — Very Good! ✅");
+        } else if (score >= 75) {
+            System.out.println("Grade: C — Passed! ✅");
+        } else {
+            // Runs only when all above are false
+            System.out.println("Grade: F — Needs Improvement.");
+        }
+        
+        input.close();
+    }
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 5 -->
+            <div class="lesson-box">
+                <div class="lesson-header" onclick="toggleLesson('lesson5')">
+                    <span class="lesson-num">05</span>
+                    <h3>Loops — Repeating Actions</h3>
+                    <span class="toggle-icon" id="icon-lesson5">▼</span>
+                </div>
+                <div class="lesson-content" id="lesson5">
+                    <div class="lesson-body">
+                        <h4>📖 Definition:</h4>
+                        <p><strong>Loops</strong> let you repeat a block of code many times without typing it over and over again. Great for counting, processing lists, or doing tasks multiple times!</p>
+                        
+                        <h4>💡 Two Main Types:</h4>
+                        <ul>
+                            <li><strong>for loop</strong> — Best when you know exactly how many times to repeat. Has 3 parts: starting point, ending condition, and increment.</li>
+                            <li><strong>while loop</strong> — Repeats as long as the condition stays TRUE. Use when you don't know how many repetitions you need.</li>
+                        </ul>
+                        
+                        <h4>💻 Code — LoopsDemo.java</h4>
+                        <div class="code-display">
+<pre>// Lesson 5: Loops — For and While
+public class LoopsDemo {
+    public static void main(String[] args) {
+        System.out.println("=== For Loop: Count 1 to 5 ===");
+        // (start; condition; change)
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Count: " + i);
+        }
+
+        System.out.println("\n=== While Loop: Count Down ===");
+        int count = 5;  // Starting value
+        while (count >= 1) {  // Repeat while condition is true
+            System.out.println("Remaining: " + count);
+            count--;  // Decrease by 1 each time
+        }
+
+        System.out.println("\nDone!");
+    }
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 6 -->
+            <div class
